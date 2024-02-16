@@ -16,9 +16,13 @@ const image = document.querySelector(".image");
 
 document.addEventListener("DOMContentLoaded", function () {
   let titlequery;
-  SearchButton.onclick = function () {
+  document.querySelector('form').addEventListener('submit', function (event) {
+    event.preventDefault();
+  });
+  SearchButton.addEventListener("click", function () {
     titlequery = Search.value;
-  };
+    console.log(Search.value);
+  });
   // Create an object with the form data
   const formData = {
     title: titlequery,
