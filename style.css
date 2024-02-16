@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --accent-color: rgb(6, 146, 143);
+}
+
+body{
+    background-color: rgb(28, 26, 26);
+    color: aliceblue;
+}
+
+/* ====================================
+Heading
+==================================== */
+header{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px;
+}
+.logo{
+   padding-left: 30px;
+}
+
+.search-div>form{
+    position: relative;
+}
+.search-div>form> input[type="text"]{
+    padding: 10px;
+    width: 90%;
+    border-radius: 8px ;
+    border: transparent;
+    text-align: center;
+}
+.search-div>form> input[type="text"]{
+    border: transparent;
+}
+
+.search-div>form>button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 18%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ================================================================
+main
+================================================================ */
+
+main{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.one{
+    grid-column: 4 span;
+    text-align: center;
+}
+
+.two{
+    grid-column: 1 span;
+    text-align: center;
+}
